@@ -19,7 +19,7 @@ add_action('wp_dashboard_setup', 'sola_custom_dashboard_widgets');
  
 function sola_custom_dashboard_widgets() {
   global $wp_meta_boxes;
-  wp_add_dashboard_widget('custom_sola_widget', '<h1>Sola Guidance</h1>', 'sola_custom_dashboard_posts');
+  wp_add_dashboard_widget('custom_sola_widget', '<img style="width:100px; display:block; margin:0 auto;" src="'.plugin_dir_url( __FILE__ ).'/imgs/kau_logo.png"><h1>Sola Guidance</h1>', 'sola_custom_dashboard_posts');
   }
 
 function sola_custom_dashboard_posts() {
